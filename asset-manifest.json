@@ -1,13 +1,13 @@
 {
-  "main.css": "/sanders-vag/es-guide/static/css/main.5616d249.chunk.css",
-  "main.js": "/sanders-vag/es-guide/static/js/main.a394c1c5.chunk.js",
-  "main.js.map": "/sanders-vag/es-guide/static/js/main.a394c1c5.chunk.js.map",
-  "runtime~main.js": "/sanders-vag/es-guide/static/js/runtime~main.918872b7.js",
-  "runtime~main.js.map": "/sanders-vag/es-guide/static/js/runtime~main.918872b7.js.map",
-  "static/js/2.c82c6027.chunk.js": "/sanders-vag/es-guide/static/js/2.c82c6027.chunk.js",
-  "static/js/2.c82c6027.chunk.js.map": "/sanders-vag/es-guide/static/js/2.c82c6027.chunk.js.map",
-  "index.html": "/sanders-vag/es-guide/index.html",
-  "precache-manifest.76e14e710be902c9e7e2bec56f4bdba2.js": "/sanders-vag/es-guide/precache-manifest.76e14e710be902c9e7e2bec56f4bdba2.js",
-  "service-worker.js": "/sanders-vag/es-guide/service-worker.js",
-  "static/css/main.5616d249.chunk.css.map": "/sanders-vag/es-guide/static/css/main.5616d249.chunk.css.map"
+  "main.css": "/es-guide/static/css/main.5616d249.chunk.css",
+  "main.js": "/es-guide/static/js/main.11e39822.chunk.js",
+  "main.js.map": "/es-guide/static/js/main.11e39822.chunk.js.map",
+  "runtime~main.js": "/es-guide/static/js/runtime~main.3b5fc534.js",
+  "runtime~main.js.map": "/es-guide/static/js/runtime~main.3b5fc534.js.map",
+  "static/js/2.c82c6027.chunk.js": "/es-guide/static/js/2.c82c6027.chunk.js",
+  "static/js/2.c82c6027.chunk.js.map": "/es-guide/static/js/2.c82c6027.chunk.js.map",
+  "index.html": "/es-guide/index.html",
+  "precache-manifest.94d6fe9d1b427dabf21077535529835c.js": "/es-guide/precache-manifest.94d6fe9d1b427dabf21077535529835c.js",
+  "service-worker.js": "/es-guide/service-worker.js",
+  "static/css/main.5616d249.chunk.css.map": "/es-guide/static/css/main.5616d249.chunk.css.map"
 }

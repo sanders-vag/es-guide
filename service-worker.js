@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sanders-vag/es-guide/precache-manifest.76e14e710be902c9e7e2bec56f4bdba2.js"
+  "/es-guide/precache-manifest.94d6fe9d1b427dabf21077535529835c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sanders-vag/es-guide/index.html", {
+workbox.routing.registerNavigationRoute("/es-guide/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
