@@ -10,7 +10,7 @@ const Toc = ({ sourceMap }) => {
       <ul>
         {arrayValues.map(es => (
           <li key={es.title}>
-            <a href="">{es.title}</a>
+            <a href={`#${es.tag}`}>{es.title}</a>
             {buildSecondLevel(es.features)}
           </li>
         ))}
@@ -26,7 +26,7 @@ const buildSecondLevel = features => {
     <ul>
       {features.map(feature => (
         <li key={feature.title}>
-          <a href="">{feature.title}</a>
+          <a href={`#${feature.tag}`}>{feature.title}</a>
         </li>
       ))}
     </ul>

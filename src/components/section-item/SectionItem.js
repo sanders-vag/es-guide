@@ -1,32 +1,34 @@
 import React from "react";
-import ReactMarkdown from 'react-markdown';
-import Codepen from '../codepen/Codepen'
+import ReactMarkdown from "react-markdown";
 
-const SectionItem = ({data}) => {
+import Codepen from "../codepen/Codepen";
+
+import "./SectionItem.css";
+
+const SectionItem = ({ data }) => {
   if (!data.exampleHash) {
     return (
-      <div key={data.title}>
-      <h3>{data.title}</h3>
-      <hr />
-      <h4>Description</h4>
-      <ReactMarkdown source={data.description} />
-    </div>
-    )
+      <div>
+        <a name={data.tag}><h3>{data.title}</h3></a>
+        <hr />
+        <h4>Description</h4>
+        <ReactMarkdown source={data.description} />
+      </div>
+    );
   } else {
-  return (
-    <div key={data.title}>
-      <h3>{data.title}</h3>
-      <hr />
-      <h4>Description</h4>
-      <ReactMarkdown source={data.description} />
-      <h4>Example</h4>
-      <Codepen
-        hash={data.exampleHash}
-        name={data.title}
-      />
-    </div>
-  );
-}
+    return (
+      <div>
+        <a name={data.tag}><h3>{data.title}</h3></a>
+        <hr />
+        <h4>Description</h4>
+        <ReactMarkdown source={data.description} />
+        <h4>Example</h4>
+        <div className="example">
+          <Codepen hash={data.exampleHash} name={data.title} />
+        </div>
+      </div>
+    );
+  }
 };
 
 export default SectionItem;

@@ -8,7 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+pre code, code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    font-size: 87.5%;
+    color: #e83e8c !important;
+    word-break: break-word;
 }
