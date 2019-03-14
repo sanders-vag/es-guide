@@ -1,13 +1,13 @@
 import React from "react";
 
-const Codepen = ({url, name}) => {
+const Codepen = ({hash, name}) => {
   return (
     <p
       className="codepen"
       data-height="265"
       data-theme-id="0"
       data-default-tab="js,result"
-      data-slug-hash="ZPrOew"
+      data-slug-hash={hash}
       style={
         ({ height: `265px` },
         { "box-sizing": "border-box" },
@@ -22,7 +22,7 @@ const Codepen = ({url, name}) => {
     >
       <span>
         See the Pen{" "}
-        <a href={url}>{name}</a> by mimacom
+        <a href={`https://codepen.io/sanders-vag/pen/${hash}`}>{name}</a> by mimacom
         on <a href="https://codepen.io">CodePen</a>.
       </span>
     </p>
