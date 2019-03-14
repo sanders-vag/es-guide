@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-markdown": "^4.0.6",
+    "react-scripts": "2.1.8",
+    "react-xterm": "^2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

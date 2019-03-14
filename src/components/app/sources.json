@@ -1,0 +1,118 @@
+{
+    "es2015": {
+        "title": "ES2015/ES6",
+        "features": [
+            {
+                "title": "Variables",
+                "description": "Before ES2015 variables were always declared as `var` and they had the scope of the function where they were defined. This means declaring a `var` outside a function means its scope is global. Declaring a var inside a block delimited by curly braces `{}`, did not create a new scope. \n\n #### let and const\n\n ES2015 introduces two new modifiers: `let` and `const` which have a more delimited scope. With `var` you could override the value of a variable defined global by declaring it again in your function. \n\n When defining a variable using **let**, its scope is limited to the block, statement or expression where it is defined.\n\n When defining a variable using **const**, its value can never changed. ",
+                "exampleUrl": "https://codepen.io/sanders-vag/pen/ZPrOew"
+            },
+            {
+                "title": "Arrow functions",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Classes",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Template literals",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Destructuring",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Enhanced objects",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Strings and Objects",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Spread Operator",
+                "description": "",
+                "exampleUrl": ""
+            }
+        ]
+    },
+    "es2016": {
+        "title": "ES2016/ES7",
+        "features": [
+            {
+                "title": "Array.prototype.includes()",
+                "description": "",
+                "exampleUrl": ""
+            },
+            {
+                "title": "Pow",
+                "description": "",
+                "exampleUrl": ""
+            }
+        ]
+    },
+    "es2017": {
+        "title": "ES2017/ES8",
+        "features": [
+            {
+                "title": "Padding, values and entries",
+                "description": "",
+                "exampleUrl":""
+            },
+            {
+                "title": "Await",
+                "description": "",
+                "exampleUrl":""
+            }
+        ]
+    },
+    "es2018": {
+        "title": "ES2018/ES9",
+        "features": [
+            {
+                "title": "Extended spread operator",
+                "description": "",
+                "exampleUrl":""
+            },
+            {
+                "title": "Asyncrhonous iteration",
+                "description": "",
+                "exampleUrl":""
+            }
+        ]
+    },
+    "es2019": {
+        "title": "ES2019",
+        "features": [
+            {
+                "title": "Flat & flatMap",
+                "description": "",
+                "exampleUrl":""
+            },
+            {
+                "title": "Catch",
+                "description": "",
+                "exampleUrl":""
+            },
+            {
+                "title": "Object.fromEntries()",
+                "description": "",
+                "exampleUrl":""
+            },
+            {
+                "title": "Trim",
+                "description": "",
+                "exampleUrl":""
+            }
+        ]
+    }
+}
+
