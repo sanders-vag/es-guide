@@ -15,7 +15,10 @@ class App extends Component {
     return (
       <Container>
         <ScrollUpButton />
-        <h1>From ES2015 to ESNext</h1>
+        <h1>From ES2015 to ES2019</h1>
+        <p>
+          This guide will guide you through the main and most usefule features introduced by each of the EcmaScript specifications. 
+        </p>
         <Toc sourceMap={dataMap} />
         <Section data={arrayValues} />
       </Container>

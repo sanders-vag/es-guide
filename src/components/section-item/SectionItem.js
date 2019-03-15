@@ -8,7 +8,7 @@ import "./SectionItem.css";
 const SectionItem = ({ data }) => {
   return (
     <div>
-      <a name={data.tag}>
+      <a id={data.tag} name={data.tag}>
         <h3>{data.title}</h3>
       </a>
       <hr />

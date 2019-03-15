@@ -2,6 +2,7 @@
     "es2015": {
         "title": "ES2015/ES6",
         "tag": "es2015",
+        "specUrl": "https://www.ecma-international.org/ecma-262/6.0/",
         "features": [
             {
                 "title": "Variables",
@@ -83,7 +84,9 @@
     },
     "es2016": {
         "title": "ES2016/ES7",
-        "features": [
+        "tag": "es2016",
+        "specUrl": "https://www.ecma-international.org/ecma-262/7.0/"
+        ,"features": [
             {
                 "title": "Array.prototype.includes()",
                 "description": "ES2016 incorporates a new method as part of the array prototype to determine whether a value is included in the array or not: `Array.prototype.includes()`",
@@ -100,6 +103,8 @@
     },
     "es2017": {
         "title": "ES2017/ES8",
+        "tag": "es2017",
+        "specUrl": "https://www.ecma-international.org/ecma-262/8.0/index.html",
         "features": [
             {
                 "title": "String padding",
@@ -123,6 +128,8 @@
     },
     "es2018": {
         "title": "ES2018/ES9",
+        "tag": "es2018",
+        "specUrl": "https://www.ecma-international.org/ecma-262/9.0/index.html",
         "features": [
             {
                 "title": "Extended spread operator",
@@ -140,6 +147,8 @@
     },
     "es2019": {
         "title": "ES2019",
+        "tag": "es2019",
+        "specUrl": "",
         "features": [
             {
                 "title": "Flat & flatMap",

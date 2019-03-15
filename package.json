@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://sanders-vag.github.io/es-guide/",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
