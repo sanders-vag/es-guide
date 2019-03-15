@@ -63,7 +63,22 @@
                 "description": "One of the most useful operators included by ES2015 is the spread operator `...`. With it one can expand arrays, objects and strings. \n\n #### Arrays \n\n ```\n const a = [1,2,3] \n const b = [...a, 4,5,6] //1,2,3,4,5,6\nconst [first, ...others]=[b] //first=1, others=[2,3,4,5,6] \n``` \n\n #### Objects \n\n ```\nconst a = {a: 1, b: 'c'}\n const b = {...a, i: false} // {a:1, b:'c', i:false}\n```\n\n #### Strings \n\n ```\nconst t='text'\n const array= [...t] // ['t','e','x','t']\n``` \n\nThis operator is useful to define a function argument as an array: \n\n ```\n const fn = (a,b,c) => a+b+c\n const array = [1,2,2]\n const result=fn(...array) // 5\n```",
                 "exampleHash": "OqQQmV",
                 "tag": "spread-operator"
+            },
+            {
+                "title": "Set",
+                "description": "ES2015 introduces the class `Set` which is a container of data. \n\nA `Set` can be created as a normal _class_, with `new Set()`, which will create an empty set. It is possible also to create a set with initial values with `new Set([1,2,3])`\n\nOne can _add_ and _delete_ items from a set with `mySet.add(1)` or `mySet.delete(1)`.\n\nOne can also check if an item is in the set wiht `mySet.has(1)` and check the size of a set with `mySet.size`.\n\nAll the items can be deleted from a set with `mySet.clear()`.\n\n A set has `values()` and `keys()` methods, both return an iterator with the values. ",
+                "exampleHash": "bZLxbm",
+                "tag": "set"
+                
+            },
+            {
+                "title": "Map",
+                "description": "ES2015 introduces the class `Map` which is a container that stores data associated to a key. \n\nA `Map` can be created as a normal _class_, with `new Map()`, which will create an empty map. It is possible also to create a map with initial values with `new Map([[1, 'red'],[2, 'blue'],[3, 'green']])`\n\nOne can _add_ and _delete_ items from a map with `myMap.set(1)` or `myMap.delete(1)`.\n\nOne can also check if an item is in the map wiht `myMap.has(1)` and check the size of a map with `myMap.size`.\n\nAll the items can be deleted from a map with `myMap.clear()`.\n\n A map has `values()` and `keys()` methods that returns an iterator with the values and a list with the keys, respectively. ",
+                "exampleHash": "qvoZwv",
+                "tag": "map"
+                
             }
+
         ]
     },
     "es2016": {
@@ -71,13 +86,15 @@
         "features": [
             {
                 "title": "Array.prototype.includes()",
-                "description": "",
-                "exampleHash": ""
+                "description": "ES2016 incorporates a new method as part of the array prototype to determine whether a value is included in the array or not: `Array.prototype.includes()`",
+                "exampleHash": "pYLEYj",
+                "tag": "includes"
             },
             {
-                "title": "Pow",
-                "description": "",
-                "exampleHash": ""
+                "title": "Exponientation operator",
+                "description": "Before ES2016 the exponientation was done with `Math.pow()`.\n\n Now the operator `**` natively calculates the exponent of a number, for instance: \n\n`const eight = 2**3 //8`",
+                "exampleHash": "WmzGqN",
+                "tag": "exponientation"
             }
         ]
     },
@@ -85,14 +102,22 @@
         "title": "ES2017/ES8",
         "features": [
             {
-                "title": "Padding, values and entries",
-                "description": "",
-                "exampleHash":""
+                "title": "String padding",
+                "description": "Two new methods are included in the `String` object: `padStart` and `padEnd`. \n\n Padding means to add characters to a string until its length if the desired. Both methods accept as first argument the **desired length** for the string and, optionally, as a second parameter, the **character to be added** to the string. If the second parameter is not present, **blank spaces** will be added.",
+                "exampleHash":"jJzVPb",
+                "tag": "padding"
             },
             {
-                "title": "Await",
-                "description": "",
-                "exampleHash":""
+                "title": "Object.values() & Object.entries()",
+                "description": "Two new methods can be found in Object: `entries` and `values`. \n\n`Object.values()` returns a list with the property values of a given object.\n\n`Object.entries()` returns a map with the property keys and values of a given object.\n\nNote that in arrays, the key will be the position in the array.",
+                "exampleHash":"KEoNzz",
+                "tag": "values-entries"
+            },
+            {
+                "title": "Asyncrhonous execution",
+                "description": "`await/async` improves the handling of asynchronous execution making them more readable than Promises. This new feature is built on Promises but it wraps up all the boilerplate code for us. \n\nJust add the keyword `await` before calling a method that returns a promise to use it. \n\nNote that the method within the `await` is used must be declared as `async`. This function will also return a promise.",
+                "exampleHash":"XGENaz",
+                "tag": "await-async"
             }
         ]
     },
@@ -101,13 +126,15 @@
         "features": [
             {
                 "title": "Extended spread operator",
-                "description": "",
-                "exampleHash":""
+                "description": "In ES2018 the spread operator is improved as one can use it together with destructuring to store the rest of the elements that are not extracted to named variables. For instance:\n\n ```\n const a = [1,2,3,4,5]\nconst {first, second, ...rest} = a //first=1, second=2, rest=[3,4,5]\n```\n\nIt also works with objects.",
+                "exampleHash":"bZvBOw",
+                "tag": "extended-spread"
             },
             {
                 "title": "Asyncrhonous iteration",
-                "description": "",
-                "exampleHash":""
+                "description": "It is possible now to loop over an asynchronous iterator with the syntax `for await - of`. For example:\n\n ```\nfor await (const line of readLines(filePath)) {\n    console.log(line)\n}\n```",
+                "exampleHash":"",
+                "tag": "async-loop"
             }
         ]
     },
@@ -116,23 +143,27 @@
         "features": [
             {
                 "title": "Flat & flatMap",
-                "description": "",
-                "exampleHash":""
+                "description": "ES2019 introduces two new methods in the `Array` object: `flat` and `flatMap`. \n\n`flat` _flattens_ an array that has multiple dimensions. By default, it flattens to the first level, but the level can be passed as an argument to the function. Passing an `Infinity` is equivalent to unlimited levels.\n\n`flatMap` is a combination of `map` and `flat`. Useful when having a function that returns an array inside the `map` function but the desired output array needs to be flat.",
+                "exampleHash":"xBWqzq",
+                "tag": "flat"
             },
             {
                 "title": "Catch",
-                "description": "",
-                "exampleHash":""
+                "description": "This feature allows to omit the exception on a `catch` block.",
+                "exampleHash":"bZvqKZ",
+                "tag": "catch"
             },
             {
                 "title": "Object.fromEntries()",
-                "description": "",
-                "exampleHash":""
+                "description": "This method allows to build up an object from the map of entries. \n\n```\nconst entriesArray = [\n    ['size', 'M'],\n    ['colour', 'green'],\n    ['reference', '1999933ZE3']\n];\nconst tShirt = Object.fromEntries(entriesArray);// tShirt={size: 'M', colour: 'green', reference: '1999933ZE3'}\n```",
+                "exampleHash":"",
+                "tag": "from-entries"
             },
             {
                 "title": "Trim",
-                "description": "",
-                "exampleHash":""
+                "description": "ES2019 introduces to methods to trim a string: `trimStart` and `trimEnd`. To trim means to remove blank characters from a string.\n\n`trimStart` will remove any blank character found at the beginnig of a string.\n\n`trimEnd` will remove any blank character found at the end of a string.\n\n```\nconst text = '   butter   ';\nconst a = text.trimStart() //a='butter   '\nconst b = text.trimEnd() //b='   butter'\n```",
+                "exampleHash":"NJYjNP",
+                "tag": "trim"
             }
         ]
     }
