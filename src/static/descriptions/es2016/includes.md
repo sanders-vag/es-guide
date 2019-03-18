@@ -1,0 +1,1 @@
+ES2016 incorporates a new method as part of the array prototype to determine whether a value is included in the array or not: `Array.prototype.includes()`.

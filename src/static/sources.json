@@ -1,0 +1,180 @@
+{
+    "es2015": {
+        "title": "ES2015/ES6",
+        "tag": "es2015",
+        "specUrl": "https://www.ecma-international.org/ecma-262/6.0/",
+        "features": [
+            {
+                "title": "Variables",
+                "markdownFile": "es2015/variables.md",
+                "exampleHash": "ZPrOew",
+                "tag": "variables"
+
+            },
+            {
+                "title": "Arrow functions",
+                "markdownFile": "es2015/arrowFunctions.md",
+                "exampleHash": "xBYgYG",
+                "tag": "arrow-functions"
+            },
+            {
+                "title": "Classes",
+                "markdownFile": "es2015/classes.md",
+                "exampleHash": "eXVgLq",
+                "tag": "classes"
+            },
+            {
+                "title": "Template literals",
+                "markdownFile": "es2015/templateLiterals.md",
+                "exampleHash": "eXVGXj",
+                "tag": "template-literals"
+            },
+            {
+                "title": "Destructuring",
+                "markdownFile": "es2015/destructuring.md",
+                "exampleHash": "LaQORE",
+                "tag": "destructuring"
+            },
+            {
+                "title": "Enhanced objects",
+                "markdownFile": "es2015/enhancedObjects.md",
+                "exampleHash": "aMqEOZ",
+                "tag": "enhanced-objects"
+            },
+            {
+                "title": "ES modules syntax",
+                "markdownFile": "es2015/modules.md",
+                "exampleHash": "",
+                "tag": "es-modules"
+            },
+            {
+                "title": "For-of loop",
+                "markdownFile": "es2015/forOfLoop.md",
+                "exampleHash": "",
+                "tag": "loop"
+            },
+            {
+                "title": "Strings and Objects",
+                "markdownFile": "es2015/stringsObjects.md",
+                "exampleHash": "WmMdWv",
+                "tag": "strings-objects"
+            },
+            {
+                "title": "Spread Operator",
+                "markdownFile": "es2015/spreadOperator.md",
+                "exampleHash": "OqQQmV",
+                "tag": "spread-operator"
+            },
+            {
+                "title": "Set",
+                "markdownFile": "es2015/set.md",
+                "exampleHash": "bZLxbm",
+                "tag": "set"
+                
+            },
+            {
+                "title": "Map",
+                "markdownFile": "es2015/map.md",
+                "exampleHash": "qvoZwv",
+                "tag": "map"
+                
+            }
+
+        ]
+    },
+    "es2016": {
+        "title": "ES2016/ES7",
+        "tag": "es2016",
+        "specUrl": "https://www.ecma-international.org/ecma-262/7.0/"
+        ,"features": [
+            {
+                "title": "Array.prototype.includes()",
+                "markdownFile": "es2016/includes.md",
+                "exampleHash": "pYLEYj",
+                "tag": "includes"
+            },
+            {
+                "title": "Exponientation operator",
+                "markdownFile": "es2016/exponientationOperator.md",
+                "exampleHash": "WmzGqN",
+                "tag": "exponientation"
+            }
+        ]
+    },
+    "es2017": {
+        "title": "ES2017/ES8",
+        "tag": "es2017",
+        "specUrl": "https://www.ecma-international.org/ecma-262/8.0/index.html",
+        "features": [
+            {
+                "title": "String padding",
+                "markdownFile": "es2017/padding.md",
+                "exampleHash":"jJzVPb",
+                "tag": "padding"
+            },
+            {
+                "title": "Object.values() & Object.entries()",
+                "markdownFile": "es2017/objectValuesEntries.md",
+                "exampleHash":"KEoNzz",
+                "tag": "values-entries"
+            },
+            {
+                "title": "Asyncrhonous execution",
+                "markdownFile": "es2017/awaitAsync.md",
+                "exampleHash":"XGENaz",
+                "tag": "await-async"
+            }
+        ]
+    },
+    "es2018": {
+        "title": "ES2018/ES9",
+        "tag": "es2018",
+        "specUrl": "https://www.ecma-international.org/ecma-262/9.0/index.html",
+        "features": [
+            {
+                "title": "Extended spread operator",
+                "markdownFile": "es2018/extendedSpreadOperator.md",
+                "exampleHash":"bZvBOw",
+                "tag": "extended-spread"
+            },
+            {
+                "title": "Asyncrhonous iteration",
+                "markdownFile": "es2018/asyncIteration.md",
+                "exampleHash":"",
+                "tag": "async-loop"
+            }
+        ]
+    },
+    "es2019": {
+        "title": "ES2019",
+        "tag": "es2019",
+        "specUrl": "",
+        "features": [
+            {
+                "title": "Flat & flatMap",
+                "markdownFile": "es2019/flat.md",
+                "exampleHash":"xBWqzq",
+                "tag": "flat"
+            },
+            {
+                "title": "Catch",
+                "markdownFile": "es2019/catch.md",
+                "exampleHash":"bZvqKZ",
+                "tag": "catch"
+            },
+            {
+                "title": "Object.fromEntries()",
+                "markdownFile": "es2019/objectFromEntries.md",
+                "exampleHash":"",
+                "tag": "from-entries"
+            },
+            {
+                "title": "Trim",
+                "markdownFile": "es2019/trim.md",
+                "exampleHash":"NJYjNP",
+                "tag": "trim"
+            }
+        ]
+    }
+}
+

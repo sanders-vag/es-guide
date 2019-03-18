@@ -1,0 +1,1 @@
+This feature allows to omit the exception on a `catch` block.
