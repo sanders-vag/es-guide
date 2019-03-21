@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/stringsObjects.50156169.md"
   },
   {
-    "revision": "7eea54988e4f6f3e9d66",
+    "revision": "acebe7dc93de2ecf0a1b",
     "url": "/es-guide/static/css/main.661579b2.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/summary.9b3059e8.md"
   },
   {
-    "revision": "39c65c4b3365237799b16af8e1a376c8",
-    "url": "/es-guide/static/media/arrowFunctions.39c65c4b.md"
+    "revision": "f00c21b18a9d23027b9a3f17b34a9a82",
+    "url": "/es-guide/static/media/arrowFunctions.f00c21b1.md"
   },
   {
     "revision": "e024272e98fb3b46614a0ff49f7d4155",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/set.b5931501.md"
   },
   {
-    "revision": "0d58f0826f16df0c642ce1d073924199",
-    "url": "/es-guide/static/media/spreadOperator.0d58f082.md"
+    "revision": "f90578d68ada3ffd47ea00b090da57fb",
+    "url": "/es-guide/static/media/spreadOperator.f90578d6.md"
   },
   {
-    "revision": "7eea54988e4f6f3e9d66",
-    "url": "/es-guide/static/js/main.836b113d.chunk.js"
+    "revision": "acebe7dc93de2ecf0a1b",
+    "url": "/es-guide/static/js/main.6e622e09.chunk.js"
   },
   {
     "revision": "91d180cba4a131f2c0ea19af46e6ff1f",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/es-guide/static/css/2.b1520fc2.chunk.css"
   },
   {
-    "revision": "ec4dd4f82eca8cc3d1006004ae0424f3",
+    "revision": "92f9dd820c18a60eea2e6e60af1fb22f",
     "url": "/es-guide/index.html"
   }
 ];
