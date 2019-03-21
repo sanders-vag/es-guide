@@ -4,7 +4,7 @@
 
 Clone the repository and follow the instructions:
 
-With `npm`;
+With `npm`:
 
 ```bash
 $ npm install
