@@ -44,7 +44,7 @@ class SectionItem extends React.Component {
         )}
         {data.exampleHash && (
           <Fragment>
-            <h4>Example</h4>
+            <h4>Try it online</h4>
             <div className="example">
               <Codepen hash={data.exampleHash} name={data.title} />
             </div>
