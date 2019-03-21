@@ -24,7 +24,7 @@ The variables `first` and `second` will have `1` and `2` as values, respectively
 
 ```javascript
 const film = {
- genre: 'fiction',
+ genre: 'fantasy',
   title: 'Harry Potter & the prisoner of Azkaban',
   director: 'Alfonso Cuarón',
   year: 2004
@@ -33,7 +33,7 @@ const film = {
 const years = [1999, 2000, 2001, 2002, 2003, 2004, 2005]
 
 const {title: name, genre} = film
-// name=Harry Potter & the prisoner of Azkaban, genre=fiction
+// name=Harry Potter & the prisoner of Azkaban, genre=fantasy
 
 const [first, , , , fifth, sixth] = years
 //first=1999,fifth=2004, sixth=2005
