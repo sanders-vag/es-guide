@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import ScrollUpButton from "react-scroll-up-button";
+import ReactMarkdown from "react-markdown";
 
 import Toc from "../toc/Toc";
 import Section from "../section/Section";
@@ -8,22 +9,35 @@ import Section from "../section/Section";
 import "./App.css";
 import data from "../../static/sources.json";
 
-const App = () => {
-  const dataMap = new Map(Object.entries(data));
-  const arrayValues = [...dataMap.values()];
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      summary: ""
+    };
+  }
 
-  return (
-    <Container>
-      <ScrollUpButton />
-      <h1>From ES2015 to ES2019</h1>
-      <p>
-        This guide will guide you through the main and most usefule features
-        introduced by each of the EcmaScript specifications.
-      </p>
-      <Toc sourceMap={dataMap} />
-      <Section data={arrayValues} />
-    </Container>
-  );
-};
+  componentDidMount() {
+    const markdownPath = require("../../static/descriptions/summary.md");
+    fetch(markdownPath)
+      .then(resp => resp.text())
+      .then(summary => this.setState({ summary }));
+  }
+
+  render() {
+    const dataMap = new Map(Object.entries(data));
+    const arrayValues = [...dataMap.values()];
+    const { summary } = this.state;
+
+    return (
+      <Container>
+        <ScrollUpButton />
+        <ReactMarkdown source={summary} />
+        <Toc sourceMap={dataMap} />
+        <Section data={arrayValues} />
+      </Container>
+    );
+  }
+}
 
 export default App;
