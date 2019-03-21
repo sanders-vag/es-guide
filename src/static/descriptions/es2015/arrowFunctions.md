@@ -40,3 +40,33 @@ const print2 = console.log;
 print1(20); //20
 print2(20); //20
 ```
+
+#### Use of `this``
+
+The use of the keyword `this` is not very easy to understand and within arrow functions it does not getter better. Arrow functions inherit the scope from the execution context. This is the reason why they should not be used as constructors or even function members in classes:
+
+```javascript
+class Animal {
+  constructor(legs, name) {
+    this.legs = legs;
+    this.name = name;
+  }
+
+  getDescription = () => "Hi! My name is " + this.name + " and I have " + this.legs + " legs." //this.name and this.legs are undefined
+}
+
+
+class Animal {
+  constructor(legs, name) {
+    this.legs = legs;
+    this.name = name;
+  }
+
+  function getDescription() {
+    return "Hi! My name is " + this.name + " and I have " + this.legs + " legs." 
+  }
+}
+
+```
+
+Regular functions are required when the dynamic context is not necessary.
