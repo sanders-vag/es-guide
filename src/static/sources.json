@@ -173,6 +173,12 @@
                 "markdownFile": "es2019/trim.md",
                 "exampleHash":"NJYjNP",
                 "tag": "trim"
+            },
+            {
+                "title": "Symbol",
+                "markdownFile": "es2019/symbol.md",
+                "exampleHash": "drQPQE",
+                "tag": "symbol"
             }
         ]
     }
