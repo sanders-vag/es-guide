@@ -8,3 +8,34 @@ ES2015 introduces two new modifiers: `let` and `const` which have a more delimit
  When defining a variable using **let**, its scope is limited to the block, statement or expression where it is defined.
  
  When defining a variable using **const**, its value can never changed. 
+
+ ##### Example using only var
+
+ ```javascript
+var global = "3";
+
+for (var i = 0; i < 2; i++) {
+  var innerVar = "this is number " + i;
+}
+
+global = "4";
+
+console.log(global) //4
+console.log(i) //2
+console.log(innerVar) //this is number 1
+```
+
+##### Example using let and const
+
+```javascript
+const global = "3";
+
+for (let i = 0; i < 2; i++) {
+  let innerVar = "this is number " + i;
+}
+
+console.log(i) // error: i is not defined
+console.log(innerVar) // error: innerVar is not defined
+
+global = '4' // error: Assignment to constant variable.
+```

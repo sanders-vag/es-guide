@@ -1,3 +1,0 @@
-ES2015 introduces classes as other programming languages. You can declare a class with the syntax `class MyClass` and you can create instances using `new MyClass()`. This also enables inheritance by using the keyword `extends`.
-
- You can define a constructor by defining the method `constructor` and it can accept arguments, otherwise the default constructor applies which does not accept any arguments.
