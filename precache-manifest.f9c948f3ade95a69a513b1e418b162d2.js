@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/stringsObjects.50156169.md"
   },
   {
-    "revision": "acebe7dc93de2ecf0a1b",
+    "revision": "333e039d51e876bca49a",
     "url": "/es-guide/static/css/main.661579b2.chunk.css"
   },
   {
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/spreadOperator.f90578d6.md"
   },
   {
-    "revision": "acebe7dc93de2ecf0a1b",
-    "url": "/es-guide/static/js/main.6e622e09.chunk.js"
+    "revision": "333e039d51e876bca49a",
+    "url": "/es-guide/static/js/main.1bbbda19.chunk.js"
   },
   {
     "revision": "91d180cba4a131f2c0ea19af46e6ff1f",
@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/es-guide/static/media/padding.6743d586.md"
   },
   {
-    "revision": "3755606cb76d934a24688545703f5c39",
-    "url": "/es-guide/static/media/asyncIteration.3755606c.md"
+    "revision": "3b88014ba475227a70e9892958f064c5",
+    "url": "/es-guide/static/media/asyncIteration.3b88014b.md"
   },
   {
-    "revision": "dbe61fb7918e7cade656a7a72cf70378",
-    "url": "/es-guide/static/media/extendedSpreadOperator.dbe61fb7.md"
+    "revision": "f3d5c5fc8bc0dc57eecf6359b3bcc977",
+    "url": "/es-guide/static/media/extendedSpreadOperator.f3d5c5fc.md"
   },
   {
     "revision": "384ce6d1388782b882aae3517ece1aa4",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/es-guide/static/css/2.b1520fc2.chunk.css"
   },
   {
-    "revision": "92f9dd820c18a60eea2e6e60af1fb22f",
+    "revision": "66770faa4b16226a27a831decda6b7e2",
     "url": "/es-guide/index.html"
   }
 ];
