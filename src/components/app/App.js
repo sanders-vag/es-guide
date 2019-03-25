@@ -4,7 +4,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import ReactMarkdown from "react-markdown";
 
 import Toc from "../toc/Toc";
-import Section from "../section/Section";
+import SectionList from "../section-list/SectionList";
 
 import "./App.css";
 import data from "../../static/sources.json";
@@ -33,8 +33,8 @@ class App extends React.Component {
       <Container>
         <ScrollUpButton />
         <ReactMarkdown source={summary} />
-        <Toc sourceMap={dataMap} />
-        <Section data={arrayValues} />
+        <Toc data={arrayValues} />
+        <SectionList sections={arrayValues} />
       </Container>
     );
   }

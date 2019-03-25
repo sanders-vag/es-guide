@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 
-const Toc = ({ sourceMap }) => {
-  const arrayValues = [...sourceMap.values()];
-  if (!arrayValues) return;
+const Toc = ({ data }) => {
+  
+  if (!data) return;
 
   return (
     <Fragment>
       <h2>Table of contents</h2>
-      <ul>
-        {arrayValues.map(es => (
+      <ul className='section-list'>
+        {data.map(es => (
           <li key={es.title}>
             <a href={`#${es.tag}`}>{es.title}</a>
             {buildSecondLevel(es.features)}
@@ -20,10 +20,10 @@ const Toc = ({ sourceMap }) => {
 };
 
 const buildSecondLevel = features => {
-  if (!features) return;
+  if (!features || features.length === 0) return;
 
   return (
-    <ul>
+    <ul className='features-list'>
       {features.map(feature => (
         <li key={feature.title}>
           <a href={`#${feature.tag}`}>{feature.title}</a>

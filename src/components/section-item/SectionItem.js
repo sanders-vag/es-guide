@@ -1,58 +1,31 @@
-import React, { Fragment } from "react";
-import ReactMarkdown from "react-markdown";
+import React from "react";
+import Feature from "../feature/Feature";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons";
 
-import Codepen from "../codepen/Codepen";
-import Codeblock from "../codeblock/Codeblock";
-
-import "./SectionItem.css";
-
-class SectionItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      description: ""
-    };
-  }
-
-  componentDidMount() {
-    const { markdownFile } = this.props.data;
-
-    const markdownPath = require(`../../static/descriptions/${markdownFile}`);
-
-    fetch(markdownPath)
-      .then(resp => resp.text())
-      .then(description => this.setState({ description }));
-  }
-
-  render() {
-    const { data } = this.props;
-    const { description } = this.state;
-    return (
-      <div>
-        <a id={data.tag} name={data.tag}>
-          <h3>{data.title}</h3>
-        </a>
-        <hr />
-        {description && (
-          <Fragment>
-            <h4>Description</h4>
-            <ReactMarkdown
-              source={description}
-              renderers={{ code: Codeblock }}
-            />
-          </Fragment>
+const SectionItem = ({ section }) => {
+  if (!section) return;
+  return (
+    <div className="section">
+      <h2 id={section.tag} name={section.tag}>
+        {section.title}{" "}
+        {section.specUrl && (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Go to specification"
+            href={section.specUrl}
+          >
+            <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
+          </a>
         )}
-        {data.exampleHash && (
-          <Fragment>
-            <h4>Try it online</h4>
-            <div className="example">
-              <Codepen hash={data.exampleHash} name={data.title} />
-            </div>
-          </Fragment>
-        )}
-      </div>
-    );
-  }
-}
+      </h2>
+
+      {section.features && section.features.map(feature => (
+        <Feature key={feature.title} feature={feature} />
+      ))}
+    </div>
+  );
+};
 
 export default SectionItem;
