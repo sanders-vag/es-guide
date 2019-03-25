@@ -41,7 +41,7 @@ print1(20); //20
 print2(20); //20
 ```
 
-#### Use of `this``
+#### Use of `this`
 
 The use of the keyword `this` is not very easy to understand and within arrow functions it does not getter better. Arrow functions inherit the scope from the execution context. This is the reason why they should not be used as constructors or even function members in classes:
 
