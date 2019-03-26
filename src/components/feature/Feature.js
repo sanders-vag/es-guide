@@ -1,5 +1,7 @@
 import React, { Fragment, Component } from "react";
 import ReactMarkdown from "react-markdown";
+import { from } from "rxjs";
+import { flatMap, tap } from "rxjs/operators";
 
 import Codepen from "../codepen/Codepen";
 import Codeblock from "../codeblock/Codeblock";
@@ -10,7 +12,8 @@ class Feature extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      description: ""
+      description: "",
+      bla: ""
     };
   }
 
@@ -20,9 +23,12 @@ class Feature extends Component {
 
       const markdownPath = require(`../../static/descriptions/${markdownFile}`);
 
-      fetch(markdownPath)
-        .then(resp => resp.text())
-        .then(description => this.setState({ description }));
+      from(fetch(markdownPath))
+        .pipe(
+          flatMap(resp => resp.text()),
+          tap(description => this.setState({ description }))
+        )
+        .subscribe();
     }
   }
 
