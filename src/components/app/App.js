@@ -2,9 +2,11 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ScrollUpButton from "react-scroll-up-button";
 import ReactMarkdown from "react-markdown";
+import { tap } from "rxjs/operators";
 
 import Toc from "../toc/Toc";
 import SectionList from "../section-list/SectionList";
+import { getMarkdownContent } from "../../utils/utils";
 
 import "./App.css";
 import data from "../../static/sources.json";
@@ -19,9 +21,9 @@ class App extends React.Component {
 
   componentDidMount() {
     const markdownPath = require("../../static/descriptions/summary.md");
-    fetch(markdownPath)
-      .then(resp => resp.text())
-      .then(summary => this.setState({ summary }));
+    getMarkdownContent(markdownPath)
+      .pipe(tap(summary => this.setState({ summary })))
+      .subscribe();
   }
 
   render() {

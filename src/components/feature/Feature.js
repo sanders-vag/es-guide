@@ -1,10 +1,10 @@
 import React, { Fragment, Component } from "react";
 import ReactMarkdown from "react-markdown";
-import { from } from "rxjs";
-import { flatMap, tap } from "rxjs/operators";
+import { tap } from "rxjs/operators";
 
 import Codepen from "../codepen/Codepen";
 import Codeblock from "../codeblock/Codeblock";
+import { getMarkdownContent } from '../../utils/utils'
 
 import "./Feature.css";
 
@@ -23,9 +23,8 @@ class Feature extends Component {
 
       const markdownPath = require(`../../static/descriptions/${markdownFile}`);
 
-      from(fetch(markdownPath))
+      getMarkdownContent(markdownPath)
         .pipe(
-          flatMap(resp => resp.text()),
           tap(description => this.setState({ description }))
         )
         .subscribe();
