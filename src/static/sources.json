@@ -138,7 +138,7 @@
                 "tag": "extended-spread"
             },
             {
-                "title": "Asyncrhonous iteration",
+                "title": "Asynchronous iteration",
                 "markdownFile": "es2018/asyncIteration.md",
                 "exampleHash":"drmOEB",
                 "tag": "async-loop"
